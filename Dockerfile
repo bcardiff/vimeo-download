@@ -11,4 +11,4 @@ ADD vimeo-download.py /app/
 RUN cd /app && pip install -r requirements.txt
 
 WORKDIR /app
-ENTRYPOINT /app/vimeo-download.py
+ENTRYPOINT ["/app/vimeo-download.py"]
